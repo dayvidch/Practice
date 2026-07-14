@@ -1,0 +1,2 @@
+Basically a class is an overview for subjects. 
+It is making the characterisitcs for subjects, and you fill out those characteristics when you make them as their own seperate object.
