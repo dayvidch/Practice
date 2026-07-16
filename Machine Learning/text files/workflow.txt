@@ -1,0 +1,59 @@
+The workflow should be:
+
+1. load the data
+    read the csv with pandas
+    .describe()
+    .columns
+    handle any missing data
+
+    create prediction target
+        the target is traditionally called y
+        y = data['target_column']
+
+    create features list
+        the features are traditionally called X
+        features = ['f1', 'f2', 'f3']
+        X = data[features]
+
+        check that the features loaded correctly
+        X.head()
+        X.describe()
+
+2. Build model
+    use skit learn library
+    1. define: what type of model it will be
+    2. fit: capture paterns from the data
+    3. predict
+    4. evaluate
+
+        from sklearn.tree import DecisionTreeRegressor
+
+    create model
+        model = DecisionTreeRegressor(random_state=1)
+
+    give the model the features and what to predict
+        model.fit(X,y)
+
+    make predictions
+        print("predicting X head prices")
+        model.predict(X.head())
+
+3. Model validation
+    mean absolute error
+    prediction error = actual - predicted value
+    with MAE, take absoulte value of each error and find the average. "On average, my predictions are off by"
+
+    from sklearn.metrics import Mean_absolute_error
+    predicted = model.predict(X)
+    mean_absoulte_error(y, predicted)
+
+    train/test/split
+
+    from sklearn.model_selection import train_test_split
+    train_X, val_X, train_y, val_y = train_test_split(X, y, random_state=0)
+    model.fit(train_X, train_y)
+
+    predictions = model.predict(val_X)
+    mean_absolute_error(val_y, predictions)
+
+4. Underfitting and Overfitting

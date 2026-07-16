@@ -1,0 +1,3 @@
+kaggle
+    use this to first understand the workflow. Dont immediatly start coding. Fist use pseudocode to make the skeleton of what i need to do
+    link: https://www.kaggle.com/learn/intro-to-machine-learning

@@ -1,0 +1,20 @@
+Rules
+1. NO AI
+    no vibe coding or ai generated code. Cannot use AI to write any code or solve any problems. This project is for me to learn and develop my skills
+    cannot go on any AI website
+
+2. No copying solutions
+    when searching up solutions I have to implement them myself, cannot copy and paste
+
+3. No copying terminal errors
+    when I run into errors on the terminal for whatever reason, actually try to understand the error instead of copy pasting it to AI
+
+4. Have fun
+    this shit is mine and mine alone. 
+
+Project Spotify
+Goal: predict how much grammys each song won
+Goal: predict how much monthly listeners
+
+Project Job Salary
+Goal: predict the salary of a job
